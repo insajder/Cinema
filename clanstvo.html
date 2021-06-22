@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Cinema</title>
+</head>
+
+<body>
+    <nav class="navigacija" id="mojaNavigacija">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="logo" class="logo2">Cinema
+        </a>
+        <a href="index.html">Početna</a>
+        <a href="galerija.html">Galerija</a>
+        <a href="clanstvo.html" class="aktivna">Članstvo</a>
+        <a href="projekcije.html">Projekcije</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="#" class="ikona">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav><br><br>
+
+    <div class="container">
+        <h4>Članstvo</h4>
+        <hr>
+        <div class="row">
+            <div class="alert alert-light" role="alert">
+                <h4 class="alert-heading">NAPOMENA!</h4>
+                <p>Ostvari više pri svakoj poseti bioskopu! Za svaki 1 dinar potrošen na blagajni bioskopa pri kupovini ulaznica, hrane ili pića, dobijaš 1 bonus bod. Svoje bodove možeš zameniti za atraktivne nagrade, dok uplatom od najmanje 2.000 dinara
+                    na svoju bonus karticu, možeš ostvariti pravo na sniženu cenu ulaznica.</p>
+                <hr>
+                <p class="mb-0">Ukoliko se obavlja pojedinačna kupovina ulaznica za dva različita dana, u tom slučaju je moguće prikupiti dve ulaznice za Black status bez obzira na dnevni limit po projekciji.</p>
+            </div>
+            <img src="img/clanstvo.jpg" class="card-img-top" alt="clanstvo">
+        </div>
+        <div class="row mt-3">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Gde mogu dobiti svoju bonus karticu?
+                    </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Besplatno se registrujte na našoj web stranici (do registracije). Kod koji dobijete putem e-maila je potrebno da pokažete na blagajni bioskopa, na osnovu kojeg vam zaposleni izdaje Cineplexx bonus karticu.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Kako mogu dopuniti svoju bonus karticu?
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Svoju Cineplexx bonus karticu možete dopuniti na blagajni bioskopa u toku radnog vremena sa najmanjim iznosom od 2.000 dinara.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Kako mogu proveriti stanje svojih bonus bodova?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Stanje svojih bonus bodova u svakom trenutku možete proveriti online. Potrebno je da u gornjem desnom uglu izaberete svoje ime i označite opciju "Cineplexx bonus kartica" kako biste videli stanje sakupljenih bodova. Svoje bodove možete proveriti i na
+                            Cineplexx aplikaciji pod Cineplexx bonus kartica, kao i u vašem newsletter-u, na bioskopskim ulaznicama ili potvrdi rezervacije.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Kako mogu iskoristiti svoje bonus bodove?
+                    </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Svoje bodove možete zameniti na blagajni bioskopa za besplatne ulaznice ili artikle sa prodajnog šanka hrane i pića.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Šta da uradim u slucaju gubitka ili ostecenja bonus kartice?
+                      </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Molimo da nas o gubitku ili oštećenju kartice obavestite putem e-maila na bonuskartica@gmail.rs . Potrebno je da nam pošaljete broj svoje Cineplexx bonus kartice, zbog čega vas savetujemo da taj broj imate sačuvan odvojeno od same kartice. Nakon gubitka
+                                Cineplexx bonus kartice, vlasnik će dobiti novu karticu nakon datog broja izgubljene kartice i identifikacionog dokumenta. Sredstva i bonus bodovi će biti prebačeni sa stare na novu Cineplexx bonus karticu, sa iznosom umanjenim
+                                za manipulativne troškove u iznosu od 250 dinara. Nova Cineplexx bonus kartica će važiti u istom periodu kao i izgubljena kartica.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <footer class="bg-dark pt-3 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <p class="text-light"><strong>Kontakt</strong></p>
+                    <hr>
+                    <ul class="list-unstyled">
+                        <li><a class="text-light" href=""><i class="fa fa-map-marker" aria-hidden="true"></i> Vojvode Stepe 283, Voždovac</a></li>
+                        <li><a class="text-light" href="tel:+11-2471-099"><i class="fa fa-phone" aria-hidden="true"></i> 011/2471-099</a></li>
+                        <li><a class="text-light" href="mailto:nature@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> cinema@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <p class="text-light"><strong>Pratite nas</strong></p>
+                    <hr>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="text-light" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a class="text-light" href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a class="text-light" href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a class="text-light" href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <table class="table  table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Radno vreme</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Ponedeljak</th>
+                                <td>09:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Utorak</th>
+                                <td>09:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sreda</th>
+                                <td colspan="2">09:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Četvrtak</th>
+                                <td colspan="2">09:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Petak</th>
+                                <td colspan="2">09:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Subota</th>
+                                <td colspan="2">09:00 - 21:00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Nedelja</th>
+                                <td colspan="2" class="text-danger">Zatvoreno</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div> <br><br>
+
+            <p class="text-center pb-3 text-light">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2021 | CINEMA</p>
+
+        </div>
+    </footer>
+
+    <script src="funkcije.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</body>
+
+</html>

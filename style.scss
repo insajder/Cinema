@@ -1,0 +1,197 @@
+$bela: white;
+.navigacija {
+    overflow: hidden;
+    background-color: #262626;
+    a {
+        float: left;
+        display: block;
+        color: #a6a6a6;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        margin-top: 1rem;
+        &:hover {
+            color: #cccccc;
+        }
+        &.aktivna {
+            color: $bela;
+        }
+    }
+    .ikona {
+        display: none;
+    }
+    a:first-child {
+        font-size: 20px;
+        color: $bela;
+        font-style: italic;
+        margin-right: 7rem;
+        margin-top: 0;
+        margin-left: 2rem;
+    }
+}
+
+.logo2 {
+    width: 50px;
+    height: 50px;
+}
+
+.btn-linkovi {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.slika-kartica {
+    height: 10rem;
+}
+
+table {
+    font-size: 14px;
+}
+
+.slika-projekcije {
+    height: 13rem;
+}
+
+.slika {
+    width: 100%;
+    height: 20rem;
+    background-image: url("img/bioskop.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+[id*="poruka-"] {
+    color: red;
+}
+
+.dugmeKartica {
+    border-radius: 8px;
+    background: #0000e6;
+    border: none;
+    color: $bela;
+    padding: 8px 28px;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+        background: #0066ff;
+        color: $bela;
+    }
+}
+
+.sivo {
+    margin-top: 5px;
+    background-color: grey;
+    &:hover {
+        background-color: grey;
+    }
+}
+
+.crno {
+    margin-top: 5px;
+    background-color: black;
+    &:hover {
+        background-color: #333333;
+    }
+}
+
+#gallery {
+    padding-top: 40px;
+}
+
+.img-wrapper {
+    position: relative;
+    margin-top: 15px;
+    img {
+        width: 100%;
+    }
+}
+
+@mixin overlayMix {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-overlay {
+    position: absolute;
+    @include overlayMix;
+    opacity: 0;
+    i {
+        color: #fff;
+        font-size: 3em;
+    }
+}
+
+#overlay {
+    position: fixed;
+    @include overlayMix;
+    z-index: 999;
+    user-select: none;
+    img {
+        margin: 0;
+        width: 30%;
+        height: auto;
+        padding: 5%;
+    }
+}
+
+#exitButton {
+    color: #fff;
+    font-size: 2em;
+    transition: opacity 0.8s;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+footer {
+    margin-bottom: -3rem;
+}
+
+.prijatelji {
+    height: 20rem;
+}
+
+@media screen and (max-width: 768px) {
+    .navigacija {
+        a {
+            &:not(:first-child) {
+                display: none;
+            }
+            &.ikona {
+                float: right;
+                display: block;
+            }
+        }
+        &.responsive {
+            position: relative;
+            .ikona {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+    }
+    #overlay img {
+        width: 60%;
+    }
+    #exitButton {
+        font-size: 3em;
+    }
+}
